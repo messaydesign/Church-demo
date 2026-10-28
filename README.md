@@ -6,7 +6,16 @@ Live: https://church-hub-demo.netlify.app
 
 All data is fictional (`src/lib/demo-data.ts`). Nothing is saved and no payments are taken.
 
-## Screens
+## Member app (`/me`)
+
+Phone-first app for members and parents, signed in as a demo member:
+
+- **Home** — today's academy check-in status, recurring gift, upcoming events, announcements
+- **Give** — amount, fund, frequency, saved bank or card, fee cover, giving history and tax statement
+- **Events** — register family members, waivers, pay with saved card
+- **Family** — pickup code, children and allergies, authorized pickup, re-enroll for next term
+
+## Admin screens
 
 - **Dashboard** — giving, households, registrations and enrollment at a glance
 - **Members** — households, children, allergies and authorized pickup

@@ -238,3 +238,46 @@ export function initials(name: string) {
     .slice(0, 2)
     .join("")
 }
+
+// Member app: the signed-in member is Selam Bekele.
+export const me = {
+  household: households[0],
+  firstName: "Selam",
+  card: "Visa ending 4242",
+  bank: "Chase checking ending 6789",
+}
+
+export const myGifts = [
+  { id: "m1", date: "Oct 26, 2026", fund: "General Fund", amount: 200, method: "Bank", recurring: true },
+  { id: "m2", date: "Oct 12, 2026", fund: "Building Fund", amount: 150, method: "Card", recurring: false },
+  { id: "m3", date: "Sep 26, 2026", fund: "General Fund", amount: 200, method: "Bank", recurring: true },
+  { id: "m4", date: "Aug 26, 2026", fund: "General Fund", amount: 200, method: "Bank", recurring: true },
+  { id: "m5", date: "Aug 9, 2026", fund: "Missions", amount: 75, method: "Card", recurring: false },
+]
+
+export const myRecurring = { fund: "General Fund", amount: 200, frequency: "Monthly", next: "Nov 26, 2026" }
+
+export const myRegistrations = [{ eventId: "e2", people: 4, paid: 40 }]
+
+// Today's academy session: Liya is checked in, Nati has not arrived yet.
+export const myCheckIns: Record<string, { status: "in" | "out" | "none"; time?: string; code?: string; room?: string }> = {
+  c1: { status: "in", time: "9:02 AM", code: "DM28", room: "Room 104" },
+  c2: { status: "none" },
+}
+
+export const announcements = [
+  {
+    id: "n1",
+    title: "Spring 2027 academy enrollment is open",
+    body: "Enroll by Dec 15 to keep your child's seat. Sibling and member discounts apply automatically.",
+    date: "Oct 27",
+    href: "/me/family",
+  },
+  {
+    id: "n2",
+    title: "Volunteers needed for the Thanksgiving 5K",
+    body: "Water stations and registration table, 7:00–10:00 AM on Nov 21.",
+    date: "Oct 24",
+    href: "/me/events",
+  },
+]

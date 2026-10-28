@@ -9,6 +9,7 @@ import {
   HandCoinsIcon,
   LayoutDashboardIcon,
   ScanLineIcon,
+  SmartphoneIcon,
   UsersIcon,
 } from "lucide-react"
 
@@ -95,6 +96,14 @@ export function AppSidebar() {
       </SidebarContent>
       <SidebarFooter>
         <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild tooltip="Open member app">
+              <Link href="/me">
+                <SmartphoneIcon />
+                <span>Open member app</span>
+              </Link>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg">
               <Avatar className="size-8 rounded-lg">
