@@ -1,9 +1,9 @@
 import Link from "next/link"
 import { ChurchIcon } from "lucide-react"
 
+import { MemberAccountMenu } from "@/components/member-account-menu"
 import { MemberTabBar } from "@/components/member-tab-bar"
-import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { church, initials, me } from "@/lib/demo-data"
+import { church } from "@/lib/demo-data"
 
 export default function MemberLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -20,9 +20,7 @@ export default function MemberLayout({ children }: { children: React.ReactNode }
               Demo · switch to admin
             </Link>
           </div>
-          <Avatar className="size-8">
-            <AvatarFallback className="text-xs">{initials(me.household.primary)}</AvatarFallback>
-          </Avatar>
+          <MemberAccountMenu />
         </header>
         <main className="flex-1 px-4 pt-5 pb-8">{children}</main>
         <MemberTabBar />

@@ -98,7 +98,7 @@ export function AppSidebar() {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="Open member app">
-              <Link href="/me">
+              <Link href="/sign-in">
                 <SmartphoneIcon />
                 <span>Open member app</span>
               </Link>

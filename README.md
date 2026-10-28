@@ -8,7 +8,7 @@ All data is fictional (`src/lib/demo-data.ts`). Nothing is saved and no payments
 
 ## Member app (`/me`)
 
-Phone-first app for members and parents, signed in as a demo member:
+Phone-first app for members and parents. Start at `/sign-in` (email or phone code; any 6 digits works in the demo):
 
 - **Home** — today's academy check-in status, recurring gift, upcoming events, announcements
 - **Give** — amount, fund, frequency, saved bank or card, fee cover, giving history and tax statement
