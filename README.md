@@ -2,7 +2,9 @@
 
 Clickable demo of Church Hub: members, giving, events, the academy and safe child check-in, in one place.
 
-Live: https://church-hub-demo.netlify.app
+Live: https://church-hub-demo.netlify.app · Member sign-in: https://church-hub-demo.netlify.app/sign-in/
+
+Pushes to `main` deploy automatically on Netlify.
 
 All data is fictional (`src/lib/demo-data.ts`). Nothing is saved and no payments are taken.
 
